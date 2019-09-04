@@ -7,22 +7,27 @@
     width: 100%;
     height: 70px;
     background-color: white;
-    border-bottom:2px solid rgb(0,0,0);
+    border-bottom: 10px double ;
+    border-bottom-color: black;
     padding-bottom:10px;
 }
+.fixed-nav-bar-right {
+    float: right;
+
+
+}
+
+
+
+
 
 /* The element at the top of the page right after the fixed navigation bar
    MUST have sufficient top margin or else it will be covered by the bar */
 .content {
-    margin-top: 20px;
+    margin-top: 30px;
 }
 
-/* Example responsive navigation menu  */
-.fixed-nav-bar li, .fixed-nav-bar a {
-    height: 50px;
-    line-height: 50px;
 
-}
 .menu {
     width: 90%;
     max-width: 960px;
@@ -37,7 +42,7 @@
     color: #ebebeb;
 }
 .menu-items {
-    display: inline-block;
+    display: inherit;
 
 }
 .sitename {
@@ -117,7 +122,7 @@ a.sitename, a:visited.sitename {
     }
 }
 .jumbotron {
-    background-image: url("img/pool.png");
+    background-image: url("/images/pool.png");
     background-size: cover;
     text-align: center;
     padding-top: 10rem;
@@ -252,6 +257,8 @@ h5 {
     text-align: center;
     background-color: #f1f1f1;
     width: 10%;
+    border: double ;
+    border-color: plum;
 }
 
 .card-img-top {
@@ -410,7 +417,7 @@ footer {
         list-style: none;
     }
     ul, ol {
-        padding: 0;
+        padding: 10px;
         margin: 0 0 10px 25px;
     }
     * {
@@ -828,3 +835,60 @@ footer {
             width: 1170px;
         }
 
+        .topnav .search-container {
+            float: right;
+        }
+
+        .topnav input[type=text] {
+            padding: 6px;
+            margin-top: 8px;
+            font-size: 17px;
+            border: none;
+        }
+
+        .topnav .search-container button {
+            float: right;
+            padding: 6px 10px;
+            margin-top: 8px;
+            margin-right: 16px;
+            background: #ddd;
+            font-size: 17px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .topnav .search-container button:hover {
+            background: #ccc;
+        }
+
+        @media screen and (max-width: 600px) {
+            .topnav .search-container {
+                float: none;
+            }
+            .topnav a, .topnav input[type=text], .topnav .search-container button {
+                float: none;
+                display: block;
+                text-align: left;
+                width: 100%;
+                margin: 0;
+                  padding: 14px;
+            }
+            .topnav input[type=text] {
+                border: 1px solid #ccc;
+            }
+        }
+        .carousel-inner img {
+            width: 100%;
+            height: 100%;
+        }
+        .carousel-inner {
+            position: relative;
+            width: 170%;
+            overflow: hidden;
+
+        }
+        hr.style13 {
+            height: 10px;
+            border: 0;
+            box-shadow: 0 10px 10px -10px #000000 inset;
+        }
